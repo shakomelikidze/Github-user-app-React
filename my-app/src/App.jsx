@@ -8,7 +8,7 @@ function App() {
   }
   return (
     <>
-      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde aperiam dolor, laboriosam odit commodi obcaecati nulla doloremque maiores eligendi, iusto non dolorum nesciunt perferendis eius nisi neque exercitationem rerum fuga?</div>
+      {/* <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde aperiam dolor, laboriosam odit commodi obcaecati nulla doloremque maiores eligendi, iusto non dolorum nesciunt perferendis eius nisi neque exercitationem rerum fuga?</div> */}
       <button onClick={darkToggle}>Set dark</button>
     </>
   )
