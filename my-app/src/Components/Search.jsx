@@ -1,8 +1,8 @@
 import { useState } from "react";
 import React from "react";
+import axios from 'axios';
 import SvgSun from '../images/icon-sun.svg';
 import SvgSearch from "../images/icon-search.svg";
-// import SvgLogo from "../images/Oval.svg";
 import SvgLocation from "../images/icon-location.svg";
 import SvgLink from "../images/icon-website.svg";
 import SvgTwitter from "../images/icon-twitter.svg";
@@ -10,6 +10,11 @@ import SvgCompany from "../images/icon-company.svg";
 import SvgMoon from "../images/icon-moon.svg";
 
 export default function Search({ dark, setDark }) {
+  try {
+    
+  } catch (error) {
+    
+  }
   return (
     <div className="flex flex-col justify-center min-h-[100vh] items-center px-[24px] pt-[31px] pb-[79px]">
       <div className="flex justify-between items-center w-[327px] md:w-[573px] xl:w-[730px]">
@@ -51,7 +56,7 @@ export default function Search({ dark, setDark }) {
         <input
           className={`${
             dark ? "bg-[#1E2A47]" : "bg-[#FEFEFE]"
-          } outline-none text-[white] text-[13px] w-[184px] mr-[7px] placeholder:text-[13px] font-normal transition duration-1000 ease-in-out`}
+          } outline-none text-[white] flex-grow text-[13px] w-[184px] mr-[7px] placeholder:text-[13px] font-normal transition duration-1000 ease-in-out`}
           type="text"
           placeholder="Search GitHub username…"
         />
