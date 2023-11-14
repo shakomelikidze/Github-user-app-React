@@ -25,6 +25,7 @@ export default function Search({ dark, setDark }) {
           onClick={() => {
             setDark(!dark);
           }}
+          style={{ cursor: "pointer" }}
         >
           <h3
             className={`${
