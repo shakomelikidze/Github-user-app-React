@@ -1,17 +1,21 @@
-import { useState } from 'react'
-import './App.css'
+// Example in a React component
+import React from 'react';
+import './App.css';
+import { useState } from "react";
+import Search from "./Components/Search";
 
 function App() {
-  const [darkTheme, setDarkTheme] = useState();
-  const darkToggle = () => {
-    setDarkTheme(!darkTheme);
-  }
+  const [dark, setDark] = useState(true);
+
   return (
-    <>
-      {/* <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde aperiam dolor, laboriosam odit commodi obcaecati nulla doloremque maiores eligendi, iusto non dolorum nesciunt perferendis eius nisi neque exercitationem rerum fuga?</div> */}
-      <button onClick={darkToggle}>Set dark</button>
-    </>
-  )
+    <main
+      className={`${
+        dark ? "bg-[#141D2F]" : "bg-[#F6F8FF]"
+      } transition duration-1000 ease-in-out`}
+    >
+      <Search dark={dark} setDark={setDark} />
+    </main>
+  );
 }
 
 export default App;
