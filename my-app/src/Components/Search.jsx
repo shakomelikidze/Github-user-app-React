@@ -30,7 +30,7 @@ export default function Search({
           devfinder
         </h1>
         <div
-          className="flex gap-[16px]"
+          className="flex cursor-pointer gap-[16px]"
           onClick={() => {
             setDark(!dark);
           }}
